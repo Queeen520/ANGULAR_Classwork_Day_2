@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  clickDonate: number = 0;
+  clickDonate: number = 10;
 
   constructor() { }
 
   countDonate(){
-  this.clickDonate +10;
+    this.clickDonate = this.clickDonate + 10;
+   // this.clickDonate +=10; 
   }
 
   ngOnInit(): void {

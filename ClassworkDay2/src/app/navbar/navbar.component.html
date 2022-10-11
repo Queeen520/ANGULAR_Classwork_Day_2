@@ -1,27 +1,28 @@
 <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-center">
       <a class="navbar-brand" href="#">CAR RENTAL</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
-          </li>
+          </li>  
         </ul>
-            <div style="margin-left: 35%;" class="d-flex justify-content-center">
-              <ng-template [ngIf]="clickDonate >= 200">
-              <span class="navbar-text"><p>VIP</p></span>
-            </ng-template>
-            </div>
+      </div>
+    </div>
+      <ng-template [ngIf]="clickDonate >= 200">
+          <ul style="width: 400px;" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="donate nav-link" href="#">You are a VIP !</a>
+            </li>
+          </ul>
+      </ng-template>
         <form class="container-fluid d-flex justify-content-end">
             <button (click)="countDonate()" class="btn btn-outline-success me-2" type="button">Donate 10€</button>
         </form>
-      </div>
-    </div>
   </nav>
-
