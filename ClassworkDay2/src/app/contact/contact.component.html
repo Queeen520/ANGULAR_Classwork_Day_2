@@ -1,38 +1,20 @@
-<!--
-<form [formGroup]="info" (ngSubmit)="onSubmit()">
+
+<form class="myForm" [formGroup]="info" (submit)="onSubmit()">
   <label> First Name:
   <input type="text" formControlName="firstName">
   </label>
-
+  <br>
   <label>Last Name:
   <input type="text" formControlName="lastName">
   </label>
-  
-   
-  
-    <label>
-  
-      Age:
-  
-      <input type="text" formControlName="age">
-  
-    </label>
-  
-   
-  
-    <label>
-  
-      Email:
-  
-      <input type="text" formControlName="email">
-  
-    </label>
-  
-   
-  
-    <input type="submit" class="btn btn-primary" value="Submit">
-  
-   
-  
-   </form>
--->
+  <br>
+  <label> Tel. Number:
+  <input type="text" formControlName="telNumber">
+  </label>
+  <br>
+  <label> Email:
+  <input type="text" formControlName="email">
+  </label>
+  <br>
+  <input type="submit" id="send" class="btn btn-secondary" value="Send">
+</form>

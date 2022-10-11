@@ -13,9 +13,13 @@ export class ContactComponent implements OnInit {
   info = new FormGroup({
     firstName: new FormControl('',), //Validators.required
     lastName: new FormControl(''),
-    age: new FormControl(''),
+    telNumber: new FormControl(''),
     email:new FormControl(''),
   });
+
+  onSubmit(){
+    
+  }
 
   ngOnInit(): void {
   }

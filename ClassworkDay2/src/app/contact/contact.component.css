@@ -1,0 +1,10 @@
+.myForm {
+    padding: 2%;
+    background-color: lightgrey;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+
+#send {
+    width: 6%;
+}
