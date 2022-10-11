@@ -1,10 +1,10 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+<div class="row row-cols-3">
+    <div *ngFor="let car of cars" class="col" id="myCol">
       <div class="card">
-        <img src="..." class="card-img-top" alt="pic of car">
+        <img src="{{car.img}}" width="200px" height="400px" class="card-img-top" alt="pic of car">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">text text</p>
+          <h5 class="card-title">{{car.name}}</h5>
+          <p class="card-text">EUR {{car.price}}</p>
         </div>
     </div>
   </div>
