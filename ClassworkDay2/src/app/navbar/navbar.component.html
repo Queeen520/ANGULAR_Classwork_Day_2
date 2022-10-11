@@ -13,9 +13,15 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
+            <div style="margin-left: 35%;" class="d-flex justify-content-center">
+              <ng-template [ngIf]="clickDonate >= 200">
+              <span class="navbar-text"><p>VIP</p></span>
+            </ng-template>
+            </div>
         <form class="container-fluid d-flex justify-content-end">
-            <button class="btn btn-outline-success me-2" type="button">Donate 10€</button>
+            <button (click)="countDonate()" class="btn btn-outline-success me-2" type="button">Donate 10€</button>
         </form>
       </div>
     </div>
   </nav>
+
